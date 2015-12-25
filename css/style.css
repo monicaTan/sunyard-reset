@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#index-head{ height:40px; background:#47a63a; top:0px;width:100%; z-index:0;}
+#search-head{ height:40px; background:#47a63a; padding-left:26px;}
+#share-head{ height:40px; background:#47a63a; padding-left:26px;}
+#head{ height:40px; background:#47a63a; width:100%; line-height:40px; text-align:center; font-size:16px; color:#fff;}
+.head{padding:0px 10px 0px 10px ;}
+.search{ padding: 0 0px 0 0px;height:28px; line-height: 28px; border-radius:5px; margin-top: 6px; background-color: #fff; width:100%; border:1px solid #fff;}
+.search-hot{background:#fafafa; padding:10px;}
+.search-hot a {padding:6px 10px 6px 10px;margin:0px 2px 5px; line-height: 1; display: inline-block; font-size: 13px; white-space: nowrap; color: #fff; background:#45a63a; border-radius:20px; border:1px solid #45a63a;}
+
+.search-history{ background:#fafafa; border:1px solid #e4e4e4; border-left:0px; border-right:0px;}
+.search-history h2{line-height:34px; height:34px; font-size:16px; padding: 0 10px;}
+.search-history span{height:32px; line-height:32px; display:block; border-top:1px solid #e4e4e4; padding: 0 10px;}
+.search-historyBtn{padding:5px 50px 5px 50px;;  text-align:center; background:#fafafa; }
+
+.div-hide{display: none}
+/*icon
+--------------------------------------------------------------------*/
+.icon{ background:transparent url(../images/icon.png) no-repeat; display:inline-block; background-size:240px auto;}
+
+.icon-home,
+.icon-home-hover,
+.icon-column,
+.icon-column-hover,
+.icon-shop,
+.icon-shop-hover,
+.icon-card,
+.icon-card-hover,
+.icon-me,
+.icon-me-hover,
+.icon-back,
+.icon-close{width:24px;height:24px;}
+
+.icon-home{ background-position: 0px 0px;}
+.icon-home:hover{ background-position: 0px -28px;}
+.icon-home-hover{ background-position: 0px -28px;}
+
+.icon-column{background-position: -37px 0px;}
+.icon-column:hover{background-position: -37px -28px;}
+.icon-column-hover{background-position: -37px -28px;}
+
+.icon-shop{ background-position: -76px 0px; position:relative;}
+.icon-shop:hover{background-position: -76px -28px;}
+.icon-shop-hover{background-position: -76px -28px; position:relative;}
+
+.icon-card{ background-position: -112px 0px;}
+.icon-card:hover{background-position: -112px -28px;}
+.icon-card-hover{background-position: -112px -28px;}
+
+.icon-me{ background-position: -149px 0px;}
+.icon-me:hover{background-position: -149px -28px;}
+.icon-me-hover{background-position: -149px -28px;}
+
+.icon-back{ background-position: -178px 0px; cursor:pointer;}
+.icon-close{ background-position:-24px -78px; cursor:pointer;}
+.icon-pl{position:absolute; top:8px; left:10px;}
+.icon-pr{position:absolute; top:8px; right:10px;}
