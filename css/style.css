@@ -1,24 +1,41 @@
 @charset "utf-8";
 
-#index-head{ height:40px; background:#47a63a; top:0px;width:100%; z-index:0;}
-#search-head{ height:40px; background:#47a63a; padding-left:26px;}
-#share-head{ height:40px; background:#47a63a; padding-left:26px;}
-#head{ height:40px; background:#47a63a; width:100%; line-height:40px; text-align:center; font-size:16px; color:#fff;}
+#index-head{ height:40px; background:#45a63a; top:0px;width:100%; z-index:0;}
+#search-head{ height:40px; background:#45a63a; padding-left:26px;}
+#share-head{ height:40px; background:#45a63a; padding-left:26px;}
+#head{ height:40px; background:#45a63a; width:100%; line-height:40px; text-align:center; font-size:16px; color:#fff;}
 .head{padding:0px 10px 0px 10px ;}
-.search{ padding: 0 0px 0 0px;height:28px; line-height: 28px; border-radius:5px; margin-top: 6px; background-color: #fff; width:100%; border:1px solid #fff;}
-.search-hot{background:#fafafa; padding:10px;}
-.search-hot a {padding:6px 10px 6px 10px;margin:0px 2px 5px; line-height: 1; display: inline-block; font-size: 13px; white-space: nowrap; color: #fff; background:#45a63a; border-radius:20px; border:1px solid #45a63a;}
+.search{ padding: 0 8px 0 24px;height:28px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;margin-top: 6px; background:#fff url("../images/search.png") no-repeat scroll 5px center / 14px auto; width:100%; border:1px solid #fff; -webkit-appearance: none; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.head-2{ padding-right: 42px;}
+.search-hot{background:#fafafa; padding:10px; background-color: #fff}
+.search-hot a {padding:6px 10px 6px 10px;margin:0px 2px 5px; line-height: 1; display: inline-block; font-size: 12px; white-space: nowrap; color: #fff; background:#45a63a; border-radius:20px; border:1px solid #45a63a;}
 
 .search-history{ background:#fafafa; border:1px solid #e4e4e4; border-left:0px; border-right:0px;}
-.search-history h2{line-height:34px; height:34px; font-size:16px; padding: 0 10px;}
-.search-history span{height:32px; line-height:32px; display:block; border-top:1px solid #e4e4e4; padding: 0 10px;}
-.search-historyBtn{padding:5px 50px 5px 50px;;  text-align:center; background:#fafafa; }
+.search-history h2{line-height:34px; height:34px; font-size:16px; padding: 0 10px; margin-top: 20px; font-weight: normal; color: #333;}
+.search-history span{height:40px; line-height:40px; display:block; border-top:1px solid #e4e4e4; padding: 0 10px; background-color: #fff;}
+.search-historyBtn{padding:5px 30px 5px 30px; border-radius: 16px; text-align:center; background:#fff; color: #45a63a; border: 1px solid #45a63a;}
 
 .div-hide{display: none}
+/*banner
+--------------------------------------------------------------------*/
+.slider{display:none}
+.slider img{width: 100%;}
+.focus span{width:6px;height:6px;margin-right:6px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#45a63a;}
+.focus > div{ margin: 7px auto 0;}
+
 /*icon
 --------------------------------------------------------------------*/
-.icon{ background:transparent url(../images/icon.png) no-repeat; display:inline-block; background-size:240px auto;}
+.foot-menu{width:100%;  background:#fcfcfc;border-top:1px solid #d9d9d9; position:fixed; bottom:0px; font-size:12px; color:#333;}
+.foot-menu a {width:20%; text-align:center;  float:left; display:block;}
+.foot-menu a:hover{background:#f2f2f2;}
+.icon-w,.text{width:auto; display:block;}
+.icon-w{padding:5px 0px 0px 0px; line-height: 0;}
+.text{padding: 1px 0;}
+.text-hover{color:#45a63a;}
+.shop-number{background:red; width:16px;height:16px;line-height:16px; border-radius:16px; display:block; color:#fff; text-align:center;  position:absolute;right:-12px; font-size:10px; font-style: normal; font-weight: normal;}
 
+.icon{ background:transparent url(../images/icon.png) no-repeat; display:inline-block; background-size:240px auto;}
 .icon-home,
 .icon-home-hover,
 .icon-column,
@@ -30,7 +47,8 @@
 .icon-me,
 .icon-me-hover,
 .icon-back,
-.icon-close{width:24px;height:24px;}
+.icon-close,
+.icon-search{width:24px;height:24px;}
 
 .icon-home{ background-position: 0px 0px;}
 .icon-home:hover{ background-position: 0px -28px;}
@@ -56,3 +74,42 @@
 .icon-close{ background-position:-24px -78px; cursor:pointer;}
 .icon-pl{position:absolute; top:8px; left:10px;}
 .icon-pr{position:absolute; top:8px; right:10px;}
+.icon-search{background-position:-181px -78px; cursor:pointer;}
+
+
+.icon-index-order,
+.icon-index-trailer,
+.icon-index-farm,
+.icon-index-code,
+.icon-index-taste{width:51px;height:51px;}
+
+.icon-index-order{background-position: -2px -115px;}
+.icon-index-trailer{background-position: -56px -115px;}
+.icon-index-farm{background-position: -110px -115px;}
+.icon-index-code{background-position: -164px -115px;}
+.icon-index-taste{background-position: 0 -350px;}
+.quick-menu{ padding:15px 0px 15px 0px; text-align: center;}
+.quick-menu > a{ width:25%; text-align:center; float:left; display: inline-block; font-size: 14px; color: #333;}
+.quick-menu > a:first-child{ margin-left: 12.5%;}
+.quick-menu span{ display:block;}
+
+
+.hot-title{ font-weight: normal; max-height: 42px; overflow: hidden; margin: 5px 10px; line-height: 1;}
+.hot-title > a{ color: #45a63a; font-size: 16px;}
+
+.hot-go{ font-size: 0; margin: 10px 0 10px;}
+.hot-go .btn{margin-left: 10px;}
+.btn{ display: inline-block; font-size: 14px; line-height: 16px; padding: 5px 15px; border-radius: 14px; color: #45a63a; border: 1px solid #45a63a;}
+.btn-green{ background-color: #45a63a; color: #fff;}
+
+.row{ padding: 10px 5px; font-size: 0;}
+.row > a{ width: 50%; display: inline-block; padding: 0 2%;}
+.row > a img{ border: 1px solid #f4f4f4;}
+
+.row > a p,
+.row > a span{ font-size: 14px; display: block;}
+
+.row > a p{ white-space: nowrap; text-overflow:ellipsis; overflow: hidden; margin: 5px 0;}
+.row > a span{ color: #45a63a; font-size: 16px; font-weight: bold;}
+.row > a span s{ display: inline-block; padding-left: 10px; font-size: 14px; color: #999; font-weight: normal;}
+.index-item .title{ display: block; background: #b7d100; text-align: center; color: #fff; height: 36px; line-height: 36px; font-size: 16px;}

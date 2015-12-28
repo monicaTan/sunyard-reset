@@ -16,14 +16,15 @@
 <body >
     <header id="index-head">
         <div class="head">
-            <input type="search" id="" class="search" placeholder="请输入商品名称" >
+            <input type="search" class="search" placeholder="请输入商品名称" >
         </div>
     </header>
     <!-- seach history -->
     <div id="search-head" class="div-hide">
-            <div class="head">
-            <i class="icon icon-close icon-pl close "></i>
+            <div class="head head-2">
+            <i class="icon icon-close icon-pl close"></i>
                   <input type="search"  class="search" placeholder="请输入商品名称" >
+                  <i id="searchGood" class="icon icon-search icon-pr"></i>
             </div>
     </div>
     <div class="search-content div-hide">
@@ -46,53 +47,91 @@
         </div>		         
 	</div>     
 	<!-- seach history end -->
-    <!-- <div id="container" data-role="page">
-        <div class="banner">
-            <img src="images/banner/001.jpg" >
+
+    <div class="slider">
+      <ul>
+        <li><a href="javascript:;" target="_blank"><img src="images/1.jpg" alt="新侬到家"></a></li>
+        <li><a href="javascript:;" target="_blank"><img src="images/2.jpg" alt="新侬到家"></a></li>
+      </ul>
+    </div>
+
+    <div class="quick-menu clearfix">
+        <a href="javascript:;"><i class="icon icon-index-order"></i><span>订单</span></a>
+        <a href="javascript:;"><i class="icon icon-index-trailer"></i><span>预告</span></a>
+        <a href="javascript:;"><i class="icon icon-index-taste"></i><span>口味</span></a>
+        <!-- <a href="javascript:;"><i class="icon icon-index-farm"></i><span>逛农场</span></a>
+        <a href="javascript:;"><i class="icon icon-index-code"></i><span>二维码</span></a> -->
+    </div>
+
+    <div class="hot-content">
+        <a href="javascript:;">
+            <img src="images/index-hot.jpg" alt="热搜商品">
+        </a>
+        <h2 class="hot-title">
+            <a href="javascript:;">生态大米礼箱 4袋真空包装4kg</a>
+        </h2>
+        <div class="hot-go">
+            <a class="btn btn-green" href="javascript:;">查看详情</a>
+            <a class="btn btn-default" href="javascript:;">立即购买</a>
         </div>
-        <div class="quick-menu">
-			<div><i class="icon icon-index-order"></i><span>订单</span></div>
-			<div><i class="icon icon-index-trailer"></i><span>预告</span></div>
-			<div><i class="icon icon-index-farm"></i><span>逛农场</span></div>
-			<div><i class="icon icon-index-code"></i><span>二维码</span></div>
-			<br clear="all">
+    </div>
+
+    <div class="index-item">
+        <a class="title" href="javascript:;">菜箱</a>
+        <div class="row">
+            <a href="javascript:;">
+                <img data-original="images/A001.jpg" class="loading" alt="">
+                <p>【新侬】生态猪肉500g乳酸菌发酵饲料喂养，肉质鲜美。</p>
+                <span class="Price">￥99.00<s>88.00</s></span>
+            </a>
+            <a href="javascript:;">
+                <img data-original="images/A001.jpg" class="loading" alt="">
+                <p>【新侬】生态猪肉500g乳酸菌发酵饲料喂养，肉质鲜美。</p>
+                <span>&yen;99.00<s>&yen;88.00</s></span>
+            </a>
         </div>
-    </div>       -->     
-   <!--footer begin-->
-   <!-- <footer class="foot-menu ">
+    </div>
+    <!--footer begin-->
+    <footer class="foot-menu ">
         <a>
             <span class="icon-w">
                 <i class="icon icon-home-hover"></i>
             </span>
             <span class="text text-hover">首页</span>
         </a>
-         <a href="column.html">
+        <a href="column.html">
             <span class="icon-w">
                 <i class="icon icon-column"></i>
             </span>
             <span class="text">分类</span>
         </a>     
-         <a href="shop.html">
+        <a href="shop.html">
             <span class="icon-w">
                 <i class="icon icon-shop"><b class="shop-number">99</b></i>
             </span>
             <span class="text">购物车</span>
         </a>       
-         <a href="card.html">
+        <a href="card.html">
             <span class="icon-w">
                 <i class="icon icon-card"></i>
             </span>
             <span class="text">会员卡</span>
         </a>
-         <a href="me.html">
+        <a href="me.html">
             <span class="icon-w">
                 <i class="icon icon-me"></i>
             </span>
             <span class="text">我</span>
         </a>        
-    </footer> -->
-    <!--footer end--> 
+    </footer>
+    <!--footer end-->
 </body>
 </html>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
 <script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript" src="js/yxMobileSlider.js"></script>
+
+<script>
+    $(".slider").yxMobileSlider({width:640,height:240,during:3000})
+  </script>
