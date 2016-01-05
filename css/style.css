@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+.outer{ max-width: 640px; margin: 0 auto;}
+.outer-space{ padding-bottom: 48px;}
 #index-head{ height:40px; background:#45a63a; top:0px;width:100%; z-index:0;}
 #search-head{ height:40px; background:#45a63a; padding-left:26px;}
 #share-head{ height:40px; background:#45a63a; padding-left:26px;}
@@ -17,7 +18,7 @@
 
 .div-hide{display: none}
 /*banner
---------------------------------------------------------------------*/
+================================================================*/
 .slider{display:none}
 .slider img{width: 100%;}
 .focus span{width:6px;height:6px;margin-right:6px;border-radius:50%;background:#666;font-size:0}
@@ -25,7 +26,7 @@
 .focus > div{ margin: 7px auto 0;}
 
 /*icon
---------------------------------------------------------------------*/
+================================================================*/
 .foot-menu{width:100%;  background:#fcfcfc;border-top:1px solid #d9d9d9; position:fixed; bottom:0px; font-size:12px; color:#333;}
 .foot-menu a {width:20%; text-align:center;  float:left; display:block;}
 .foot-menu a:hover{background:#f2f2f2;}

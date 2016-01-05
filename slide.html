@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>新侬到家</title>
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<!-- <link rel="stylesheet" href="css/amazeui.min.css"/> -->
+<link rel="stylesheet" href="css/amazeui.slick.min.css"/>
+<style type="text/css">
+    .multiple-items .slick-slide{ background-color: blue; margin: 0 5px;}
+    .responsive img{ width: 100%;}
+</style>
+</head>
+<body >
+    <div class="slider multiple-items">
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+      <div><h3>7</h3></div>
+      <div><h3>8</h3></div>
+      <div><h3>9</h3></div>
+    </div>
+
+
+    <div class="slider responsive">
+      <div><img src="images/1.jpg" alt="新侬到家"></div>
+      <div><img src="images/2.jpg" alt="新侬到家"></div>
+      <div><img src="images/1.jpg" alt="新侬到家"></div>
+      <div><img src="images/2.jpg" alt="新侬到家"></div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+    $('.multiple-items').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    });
+    $('.responsive').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      autoplay:true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+</script>
